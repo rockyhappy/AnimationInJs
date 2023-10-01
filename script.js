@@ -64,3 +64,22 @@ function animateText(text, interval1, nextText, interval2) {
     }
   }, interval1);
 }
+
+
+
+const x = document.getElementsByClassName("image")[0];
+let a=0;
+function render()
+{
+  if(a==0)
+  {
+    x.src = `assests/dino-run-${a}.png`;
+    a++;
+  }
+  else
+  {
+    x.src = `assests/dino-run-${a}.png`;
+    a--;
+  }
+}
+setInterval(render, 1000/6);
