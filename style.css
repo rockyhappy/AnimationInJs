@@ -10,8 +10,8 @@
 .center{
     display:flex;
     justify-content: center;
-    align-items: center;
-    position: absolute;
+    align-items:  center;
+    position:  absolute;
     top: 5%;
     left: 10%;
 }
