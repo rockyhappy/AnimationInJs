@@ -1,42 +1,17 @@
-.body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh;
-  }
-  .anim{
-    font-size: 60px;
-    
-  }
-  .contain1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20vh;
+@font-face {
+    font-family: 'MinecraftFont';
+    src: url('assets/Minecraft.ttf') format('truetype');
   }
   
-.btn  {
-  display: block;
-  clear: both;
-  padding: 9px 14px;
-  border-radius: 22px;
-  color : white;
-  background-color: #1a1a1a;
-  font-weight: bold;
-  margin: 10px 3px;
-  cursor: pointer;
-  /* margin-top: 40px; */
-  border: whitesmoke;
-  text-decoration: none;
-}
-.btn:hover{
-  color : #1a1a1a;
-  background-color: white;
-  border-color: #1a1a1a;
-  text-decoration: none;
-}
-.nan{
-  text-decoration: none;
-}
+  body {
+    font-family: 'MinecraftFont', sans-serif;
+  }
   
+.center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
