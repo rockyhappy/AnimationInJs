@@ -1,4 +1,9 @@
-const y = document.getElementsByClassName("anim");
+
+
+
+function reload()
+{
+  const y = document.getElementsByClassName("anim");
 
 const str1 = "GET READY TO PLAY";
 const str2 = "READY";
@@ -66,6 +71,9 @@ function animateText(text, interval1, nextText, interval2) {
 }
 
 
+}
+reload();
+setInterval(reload, 15000/1);
 
 const x = document.getElementsByClassName("image")[0];
 let a=0;
