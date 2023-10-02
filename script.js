@@ -81,12 +81,12 @@ function render()
 {
   if(a==0)
   {
-    x.src = `assests/dino-run-${a}.png`;
+    x.src = `assets/dino-run-${a}.png`;
     a++;
   }
   else
   {
-    x.src = `assests/dino-run-${a}.png`;
+    x.src = `assets/dino-run-${a}.png`;
     a--;
   }
 }
