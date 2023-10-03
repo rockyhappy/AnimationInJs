@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'MinecraftFont';
+    src: url('assets/Minecraft.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'BabyFont';
+    src: url('assets/BABYK___.TTF') format('truetype');
+  }
+  body {
+    font-family: 'MinecraftFont', sans-serif;
+    background-image: url(./assets/70257.jpg);
+  }
+  
+  .center{
+    display:flex;
+    justify-content: center;
+    align-items:  center;
+    position:  absolute;
+    top: 5%;
+    left: 15%;
+    
+  
+  }
+  #game{
+          height: 100%;
+          width: 100%;
+          background: transparent;
+      }
