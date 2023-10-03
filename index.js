@@ -32,6 +32,10 @@ let rise=false;
 let pressed=false;
 let score=0;
 
+const crashSound = document.getElementById("crashSound");
+const jumpSound = document.getElementById("jumpSound");
+
+
 function start()
 {
     const fontSize = 50 ;
@@ -73,6 +77,9 @@ function jumppressed(event)
 {
     if (event.key === " ") {
         jumpPressed=true;
+        jumpSound.volume=0.9;
+        jumpSound.currentTime=0
+        jumpSound.play();
         //requestAnimationFrame(gameloop)
       }
 }
@@ -82,6 +89,14 @@ document.addEventListener("keypress", jumppressed);
 
  function jump ()
 {
+    // if(jumpLength==350)
+    // {
+    //     jumpSound.volume=0.9;
+    //     jumpSound.currentTime=0
+    //     jumpSound.play();
+    //     //jumpSound.pause()
+        
+    // }
     if(jumpLength<=0)
     {
         jumpPressed=false;
@@ -229,10 +244,11 @@ function showGameOver()
     const fontSize = 40 ;
     ctx.font = `${fontSize}px MinecraftFont, sans-serif`; 
     ctx.fillStyle = "grey";
-    const x = canvas.width / 3;
+    const x = canvas.width / 4;
     const y = canvas.height / 1.5;
     ctx.fillText("GAME OVER your score is: \n"+`${score}`, x, y);
     score=0
+    crashSound.play()
     //clearScreenForGameOver()
     start()
     
