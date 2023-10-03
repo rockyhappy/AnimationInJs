@@ -31,7 +31,7 @@ let gameOver=false
 let rise=false;
 let pressed=false;
 let score=0;
-
+const backGroundAudio=document.getElementById("BackgroundSound")
 const crashSound = document.getElementById("crashSound");
 const jumpSound = document.getElementById("jumpSound");
 
@@ -42,7 +42,9 @@ function start()
     ctx.font = `${fontSize}px BabyFont, sans-serif`; 
     ctx.fillStyle = "black";
     ctx.fillText("PRESS ENTER TO START ", canvas.width / 4.5,canvas.height / 2 );
-    
+    backGroundAudio.volume=0.4
+    backGroundAudio.currentTime=0
+    backGroundAudio.play()
       //document.removeEventListener("keypress")
       //drawPlayer()
       //drawGround()
