@@ -148,7 +148,7 @@ function clearScreen()
     
     {
         score+=1;
-        console.log(score)
+        //console.log(score)
         ctx.fillStyle="white"
         ctx.fillRect(0,0,canvas.width,canvas.height)
         // requestAnimationFrame(gameloop)
